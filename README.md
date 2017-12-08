@@ -14,7 +14,7 @@ Spring webtools
 
 Maven
 
-
+Spring Security -> OpenID Connect client for Google
 
 ----frontend
 

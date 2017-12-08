@@ -38,6 +38,7 @@ public class OpenIdConnectFilter extends AbstractAuthenticationProcessingFilter 
         OAuth2AccessToken accessToken;
         System.out.println("\n\nattemptAuthentication: "+request.getRequestURI()+ " params: "+request.getQueryString());
         try {
+
             accessToken = restTemplate.getAccessToken();
         } catch (final OAuth2Exception e) {
             throw new BadCredentialsException("Could not obtain access token", e);
